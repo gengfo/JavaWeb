@@ -1,0 +1,15 @@
+<head>
+	<title>统一站内风格</title>
+	<link rel="stylesheet" type="text/css" href="mycss.css">
+</head>
+<body>
+	<form action ="">
+		<table align = "center">
+			<tr>
+				<td>用户名： </td><td><input type = "text" name ="name"> </td>
+			<tr>
+		<table>
+		
+	</form>
+</body>
+
