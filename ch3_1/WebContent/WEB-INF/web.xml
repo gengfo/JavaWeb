@@ -12,6 +12,28 @@
 		<param-name>allowed file type</param-name>
 		<param-value>.gif,.jpg,.bmp</param-value>
 	</context-param>
+	
+	<env-entry>
+		<env-entry-name>hello</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>
+			Hello, Welcome to the JavaEE Resource Injection.
+		</env-entry-value>
+	</env-entry>
+
+	<env-entry>
+		<env-entry-name>i</env-entry-name>
+		<env-entry-type>java.lang.Integer</env-entry-type>
+		<env-entry-value>30</env-entry-value>
+	</env-entry>
+
+	<env-entry>
+		<env-entry-name>persons</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>
+			Helloween, Cobain, Roses, Axl,
+		</env-entry-value>
+	</env-entry>
 
 	<servlet>
 		<servlet-name>FirstServlet</servlet-name>
@@ -96,6 +118,30 @@
 		<url-pattern>/servlet/ContextParamServlet</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>InjectionServlet</servlet-name>
+		<servlet-class>
+			com.helloweenvsfei.servlet.InjectionServlet
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>InjectionServlet</servlet-name>
+		<url-pattern>/servlet/InjectionServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SearchServlet</servlet-name>
+		<servlet-class>
+			com.helloweenvsfei.servlet.SearchServlet
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>SearchServlet</servlet-name>
+		<url-pattern>/servlet/SearchServlet</url-pattern>
+	</servlet-mapping>
+	
 	<!-- 
 	
 	<servlet>
@@ -105,18 +151,8 @@
 		</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-	<servlet>
-		<servlet-name>InjectionServlet</servlet-name>
-		<servlet-class>
-			com.helloweenvsfei.servlet.InjectionServlet
-		</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>SearchServlet</servlet-name>
-		<servlet-class>
-			com.helloweenvsfei.servlet.SearchServlet
-		</servlet-class>
-	</servlet>
+	
+	
 	<servlet>
 		<servlet-name>PostServlet</servlet-name>
 		<servlet-class>
@@ -175,14 +211,8 @@
 		<servlet-name>ImageServlet</servlet-name>
 		<url-pattern>/upload/*</url-pattern>
 	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>InjectionServlet</servlet-name>
-		<url-pattern>/servlet/InjectionServlet</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>SearchServlet</servlet-name>
-		<url-pattern>/servlet/SearchServlet</url-pattern>
-	</servlet-mapping>
+	
+	
 	<servlet-mapping>
 		<servlet-name>PostServlet</servlet-name>
 		<url-pattern>/servlet/PostServlet</url-pattern>
@@ -222,27 +252,7 @@
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 
-	<env-entry>
-		<env-entry-name>hello</env-entry-name>
-		<env-entry-type>java.lang.String</env-entry-type>
-		<env-entry-value>
-			Hello, Welcome to the JavaEE Resource Injection.
-		</env-entry-value>
-	</env-entry>
-
-	<env-entry>
-		<env-entry-name>i</env-entry-name>
-		<env-entry-type>java.lang.Integer</env-entry-type>
-		<env-entry-value>30</env-entry-value>
-	</env-entry>
-
-	<env-entry>
-		<env-entry-name>persons</env-entry-name>
-		<env-entry-type>java.lang.String</env-entry-type>
-		<env-entry-value>
-			Helloween, Cobain, Roses, Axl,
-		</env-entry-value>
-	</env-entry>
+	
  	s-->
 
 </web-app>
