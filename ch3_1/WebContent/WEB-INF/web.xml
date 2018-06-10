@@ -142,6 +142,42 @@
 		<url-pattern>/servlet/SearchServlet</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>PostServlet</servlet-name>
+		<servlet-class>
+			com.helloweenvsfei.servlet.PostServlet
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PostServlet</servlet-name>
+		<url-pattern>/servlet/PostServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>
+			com.helloweenvsfei.servlet.UploadServlet
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/servlet/UploadServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ProgressUploadServlet</servlet-name>
+		<servlet-class>
+			com.helloweenvsfei.servlet.upload.ProgressUploadServlet
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProgressUploadServlet</servlet-name>
+		<url-pattern>/servlet/ProgressUploadServlet</url-pattern>
+	</servlet-mapping>
+	
 	<!-- 
 	
 	<servlet>
@@ -150,20 +186,6 @@
 			com.helloweenvsfei.servlet.ImageServlet
 		</servlet-class>
 		<load-on-startup>1</load-on-startup>
-	</servlet>
-	
-	
-	<servlet>
-		<servlet-name>PostServlet</servlet-name>
-		<servlet-class>
-			com.helloweenvsfei.servlet.PostServlet
-		</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>UploadServlet</servlet-name>
-		<servlet-class>
-			com.helloweenvsfei.servlet.UploadServlet
-		</servlet-class>
 	</servlet>
 	
 	<servlet>
@@ -194,12 +216,7 @@
 			com.helloweenvsfei.servlet.RedirectServlet
 		</servlet-class>
 	</servlet>
-	<servlet>
-		<servlet-name>ProgressUploadServlet</servlet-name>
-		<servlet-class>
-			com.helloweenvsfei.servlet.upload.ProgressUploadServlet
-		</servlet-class>
-	</servlet>
+	
 	<servlet>
 		<servlet-name>ThreadSafetyServlet</servlet-name>
 		<servlet-class>
@@ -212,15 +229,6 @@
 		<url-pattern>/upload/*</url-pattern>
 	</servlet-mapping>
 	
-	
-	<servlet-mapping>
-		<servlet-name>PostServlet</servlet-name>
-		<url-pattern>/servlet/PostServlet</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>UploadServlet</servlet-name>
-		<url-pattern>/servlet/UploadServlet</url-pattern>
-	</servlet-mapping>
 	
 	<servlet-mapping>
 		<servlet-name>LifeCycleServlet</servlet-name>
@@ -238,10 +246,7 @@
 		<servlet-name>RedirectServlet</servlet-name>
 		<url-pattern>/servlet/RedirectServlet</url-pattern>
 	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>ProgressUploadServlet</servlet-name>
-		<url-pattern>/servlet/ProgressUploadServlet</url-pattern>
-	</servlet-mapping>
+	
 	<servlet-mapping>
 		<servlet-name>ThreadSafetyServlet</servlet-name>
 		<url-pattern>/servlet/ThreadSafetyServlet</url-pattern>
