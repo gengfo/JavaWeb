@@ -13,6 +13,7 @@
 		<param-value>.gif,.jpg,.bmp</param-value>
 	</context-param>
 	
+	
 	<env-entry>
 		<env-entry-name>hello</env-entry-name>
 		<env-entry-type>java.lang.String</env-entry-type>
@@ -178,16 +179,6 @@
 		<url-pattern>/servlet/ProgressUploadServlet</url-pattern>
 	</servlet-mapping>
 	
-	<!-- 
-	
-	<servlet>
-		<servlet-name>ImageServlet</servlet-name>
-		<servlet-class>
-			com.helloweenvsfei.servlet.ImageServlet
-		</servlet-class>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-	
 	<servlet>
 		<servlet-name>LifeCycleServlet</servlet-name>
 		<servlet-class>
@@ -198,18 +189,42 @@
 			<param-value>2000</param-value>
 		</init-param>
 	</servlet>
-	<servlet>
-		<servlet-name>AnnotationServlet</servlet-name>
-		<servlet-class>
-			com.helloweenvsfei.servlet.AnnotationServlet
-		</servlet-class>
-	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LifeCycleServlet</servlet-name>
+		<url-pattern>/servlet/LifeCycleServlet</url-pattern>
+	</servlet-mapping>
+	
 	<servlet>
 		<servlet-name>ForwardServlet</servlet-name>
 		<servlet-class>
 			com.helloweenvsfei.servlet.ForwardServlet
 		</servlet-class>
 	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ForwardServlet</servlet-name>
+		<url-pattern>/servlet/ForwardServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 
+	
+	<servlet>
+		<servlet-name>ImageServlet</servlet-name>
+		<servlet-class>
+			com.helloweenvsfei.servlet.ImageServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	
+	<servlet>
+		<servlet-name>AnnotationServlet</servlet-name>
+		<servlet-class>
+			com.helloweenvsfei.servlet.AnnotationServlet
+		</servlet-class>
+	</servlet>
+	
 	<servlet>
 		<servlet-name>RedirectServlet</servlet-name>
 		<servlet-class>
@@ -231,17 +246,10 @@
 	
 	
 	<servlet-mapping>
-		<servlet-name>LifeCycleServlet</servlet-name>
-		<url-pattern>/servlet/LifeCycleServlet</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
 		<servlet-name>AnnotationServlet</servlet-name>
 		<url-pattern>/servlet/AnnotationServlet</url-pattern>
 	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>ForwardServlet</servlet-name>
-		<url-pattern>/servlet/ForwardServlet</url-pattern>
-	</servlet-mapping>
+
 	<servlet-mapping>
 		<servlet-name>RedirectServlet</servlet-name>
 		<url-pattern>/servlet/RedirectServlet</url-pattern>
