@@ -207,6 +207,18 @@
 		<url-pattern>/servlet/ForwardServlet</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>RedirectServlet</servlet-name>
+		<servlet-class>
+			com.helloweenvsfei.servlet.RedirectServlet
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>RedirectServlet</servlet-name>
+		<url-pattern>/servlet/RedirectServlet</url-pattern>
+	</servlet-mapping>
+	
 	<!-- 
 	
 	<servlet>
@@ -225,12 +237,7 @@
 		</servlet-class>
 	</servlet>
 	
-	<servlet>
-		<servlet-name>RedirectServlet</servlet-name>
-		<servlet-class>
-			com.helloweenvsfei.servlet.RedirectServlet
-		</servlet-class>
-	</servlet>
+	
 	
 	<servlet>
 		<servlet-name>ThreadSafetyServlet</servlet-name>
@@ -250,10 +257,7 @@
 		<url-pattern>/servlet/AnnotationServlet</url-pattern>
 	</servlet-mapping>
 
-	<servlet-mapping>
-		<servlet-name>RedirectServlet</servlet-name>
-		<url-pattern>/servlet/RedirectServlet</url-pattern>
-	</servlet-mapping>
+	
 	
 	<servlet-mapping>
 		<servlet-name>ThreadSafetyServlet</servlet-name>
