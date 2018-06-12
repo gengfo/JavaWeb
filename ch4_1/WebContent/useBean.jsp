@@ -9,6 +9,8 @@
 
 
 
+
+
 <%-- 声明 Person 类对象 person --%>
 <jsp:useBean id="person" class="com.helloweenvsfei.jspweb.bean.Person" scope="page"></jsp:useBean>
 
