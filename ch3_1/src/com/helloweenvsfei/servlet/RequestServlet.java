@@ -79,6 +79,10 @@ public class RequestServlet extends HttpServlet {
 
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
+		
+		String ip = request.getHeader("X-Forwarded-For");
+		
+		System.out.println("ip is:" + ip);
 
 		response.setContentType("text/html");
 		
